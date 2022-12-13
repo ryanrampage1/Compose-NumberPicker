@@ -58,9 +58,16 @@ HoursNumberPicker(
     },
     hoursDivider = {
         Text(
-            modifier = Modifier.size(24.dp),
+            modifier = Modifier.padding(horizontal = 8.dp),
             textAlign = TextAlign.Center,
-            text = ":"
+            text = "hours"
+        )
+    },
+    minutesDivider = {
+        Text(
+            modifier = Modifier.padding(horizontal = 8.dp),
+            textAlign = TextAlign.Center,
+            text = "minutes"
         )
     }
 )
@@ -80,18 +87,11 @@ HoursNumberPicker(
     onValueChange = {
         pickerValue = it
     },
-    hoursDivider = {
+        hoursDivider = {
         Text(
-            modifier = Modifier.padding(horizontal = 8.dp),
+            modifier = Modifier.size(24.dp),
             textAlign = TextAlign.Center,
-            text = "hours"
-        )
-    },
-    minutesDivider = {
-        Text(
-            modifier = Modifier.padding(horizontal = 8.dp),
-            textAlign = TextAlign.Center,
-            text = "minutes"
+            text = ":"
         )
     }
 )
